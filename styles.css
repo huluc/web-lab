@@ -7,6 +7,9 @@
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.6;
+    background-color: #ffffff;
+  color: #111827;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .site-header {
@@ -39,4 +42,26 @@ body {
 
 main {
   padding: 2rem;
+}
+.cta-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cta-button:hover {
+  background-color: #374151;
+}
+
+body[data-theme="dark"] {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+body[data-theme="dark"] .site-header {
+  background-color: #030712;
 }
