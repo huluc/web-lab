@@ -42,7 +42,9 @@ body {
 
 main {
   padding: 2rem;
+  background: #f6f8fa;
 }
+
 .cta-button {
   padding: 0.5rem 1rem;
   border: 1px solid #4b5563;
@@ -58,10 +60,19 @@ main {
 }
 
 body[data-theme="dark"] {
-  background-color: #111827;
-  color: #e5e7eb;
+  background-color: #0b1220;
+  color: #f9fafb;
 }
 
 body[data-theme="dark"] .site-header {
   background-color: #030712;
+}
+
+body[data-theme="dark"] .nav-links a {
+  color: #f3f4f6;
+}
+
+body[data-theme="dark"] .cta-button {
+  color: #f9fafb;
+  border-color: #9ca3af;
 }
